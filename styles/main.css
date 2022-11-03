@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.order-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../images/pattern-background-desktop.svg');
+
+}
+
+.order-card {
+    width: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.order-card .banner-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 30px;
+}
+
+.order-card .order-info h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.order-card .order-info p {
+    text-align: center;
+    color: hsl(228, 12%, 48%);
+}
+
+.order-card .subscription-plan {
+    width: 100%;
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 18px 15px;
+}
+
+.order-card .subscription-plan .plan-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.order-card .subscription-plan .plan-details .plan-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-card .subscription-plan .plan-details .plan-price .plan-info {
+    font-weight: 700;
+    font-size: 14px;
+ }
+
+ .order-card .subscription-plan .plan-details .plan-price .plan-actual-price {
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+ }
+
+  .order-card .subscription-plan .plan-change-link {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .order-card .subscription-plan .plan-change-link:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .order-card .order-btn {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 8px 6px 4px hsl(224deg 23% 55% / 24%);
+    cursor: pointer;
+  }
+
+  .order-card .order-btn:hover {
+    background: hsl(245deg 75% 52% / 69%);
+  }
+
+  .order-card .cancel-order {
+    font-size: 14px;
+    margin-top: 10px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .order-card .cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+  }
+
+  @media (max-width:768px) {
+    .order-wrapper {
+        padding: 0 2rem;
+    }
+  }
